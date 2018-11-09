@@ -20,8 +20,10 @@ I confirmed operation only with..
 3)numpy 1.14.2    
 4)Pillow 4.3.0  
 
-# result Image
-... 
+# result Image  
+After learning about 200epochs using MNIST  digit "1", I input "1" and other digits to R-Network.  
+![resultimage_18110905_235](https://user-images.githubusercontent.com/15444879/48254515-9fd5be00-e44d-11e8-86f6-8ea0976b0682.png)
+Right side is prediction for "1", and left side is prediction for other digits.  From left colomn, input images, reconstructioned images, differences.  
 
 # email  
 t.ohmasa@w-farmer.com  
