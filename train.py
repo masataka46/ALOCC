@@ -89,7 +89,7 @@ dis_vars = tf.get_collection(tf.GraphKeys.TRAINABLE_VARIABLES, scope="discrimina
 with tf.name_scope("train"):
     train_dis = tf.train.AdamOptimizer(learning_rate=0.00001, beta1=0.5).minimize(loss_D_total, var_list=dis_vars
                                                                                 , name='Adam_D')
-    train_r = tf.train.AdamOptimizer(learning_rate=0.00001, beta1=0.5).minimize(loss_R_total, var_list=enc_vars+dec_vars
+    train_r = tf.train.AdamOptimizer(learning_rate=0.0001, beta1=0.5).minimize(loss_R_total, var_list=enc_vars+dec_vars
                                                                                 , name='Adam_R')
 
 sess = tf.Session()
